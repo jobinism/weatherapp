@@ -14,7 +14,7 @@ function App() {
       fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
       .then(res => res.json())
       .then(result => {
-        setQuery('');
+        setQuery(''); 
         console.log(result);
       });
       
